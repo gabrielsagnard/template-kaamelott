@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Générateur de citations issues de la série Kaamelott</title>
+</head>
+
+<body>
+    <section id="description" class="flexboxc">
+
+        <img src="images/Kaamelott_logo.png" id="logo" alt "generateur_citations" />
+
+        <h1>Générateur</h1>
+        <h2>Les meilleures citations de Kaamelott</h2>
+        <a href="#generateur"><i class="fa fa-arrow-down fa-3x" aria-hidden="true" id="fleche"></i></a>
+
+    </section>
+
+    <section id="generateur" class="flexboxc">
+
+
+        <div id="logiciel">
+            <h2 id="rompre">Je veux causer avec : </h2>
+            <input type="radio" name="question" value="k" id="Kadoc"><span id="humain">Kadoc</span><br><br>
+            <input type="radio" name="question" value="a" id="Arthur"><span id="humain">Arthur</span>
+        </div>
+
+
+        <button type="button" onclick="document.getElementById('phrase').innerHTML = generation()" id="bouton">Générer</button>
+
+        <p id="phrase"></p>
+
+        <a href="#fin"><i class="fa fa-info fa-3x" aria-hidden="true"></i></a>
+
+    </section>
+
+    <section class="flexboxf" id="fin">
+
+        <h2>Qui suis-je?</h2>
+
+        <p class="gauche"> Je m'appelle Gabriel SAGNARD, j'ai 29 ans et je suis à la recherche de projets dans le domaine du développement web.</p>
+        <p class="gauche">Voici l'adresse de mon site internet si vous souhaitez voir mes différentes réalisations :</p>
+        <p id="site">gabrielsagnard.fr</p>
+        <div class="flexboxr">
+            <i class="fa fa-envelope-o fa-2x colored" id="mail" aria-hidden="true"></i>
+            <i class="fa fa-github fa-2x colored" id="github" aria-hidden="true"></i>
+            <i class="fa fa-linkedin fa-2x colored" id="linkedin" aria-hidden="true"></i>
+            <i class="fa fa-gitlab fa-2x colored" id="gitlab" aria-hidden="true"></i>
+        </div>
+
+        <div class="flexboxc">
+
+            <a href="#description"><i class="fa fa-arrow-up fa-2x" aria-hidden="true" id="fleche"></i></a>
+
+        </div>
+
+    </section>
+    <footer>
+        Imaginé et codé par <a href="https://twitter.com/GabrielSagnard">@gabrielsagnard</a>.
+    </footer>
+
+
+    <section id="landscape">
+        <p>Veuillez passer votre téléphone en mode portrait pour profiter de l'application.<br> Ou si vous êtes sur ordinateur, veuillez agrandir la hauteur de votre fenêtre, merci.</p>
+    </section>
+
+
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="generateur.js"></script>
+    <script src="https://use.fontawesome.com/73cbc12730.js"></script>
+</body>
+
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/generation.js"></script>
+<script src="js/animation.js"></script>
+</body>
+
+</html>
